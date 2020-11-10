@@ -50,6 +50,12 @@ def square():
         sendmsg('forward 100')
         sendmsg('ccw 90')
 
+# Triangle
+def triangle():
+    for i in range(3):
+        sendmsg('forward 100')
+        sendmsg('ccw 120')
+
 
 print("\nMr. Lange")
 print("Program Name: Tello Drone Training School")
@@ -68,7 +74,11 @@ try:
         sendmsg('takeoff')
 
         # Call the Square Function
-        square()
+        # square()
+
+
+        # Call Triange
+        triangle()
 
         sendmsg('land')
 
